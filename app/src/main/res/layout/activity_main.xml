@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
     <fragment
         android:id="@+id/fragment_login_container"
-        class="kr.co.kjworld.soccerproject.login.LoginFragment"
+        android:name="kr.co.kjworld.soccerproject.login.LoginFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_login"/>
 
 
 </LinearLayout>

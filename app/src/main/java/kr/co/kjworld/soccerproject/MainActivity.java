@@ -1,6 +1,6 @@
 package kr.co.kjworld.soccerproject;
 
-import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -13,6 +13,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import kr.co.kjworld.soccerproject.login.LoginFragment;
+import kr.co.kjworld.soccerproject.login.kakao.KakaoSDKAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,8 +37,22 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.fragment_login_container, LoginFragment.newInstance()).commit();
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        LoginFragment loginFragment = new LoginFragment();
+        fragmentTransaction.add(R.id.fragment_login_container, loginFragment);
 
+    }
+
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

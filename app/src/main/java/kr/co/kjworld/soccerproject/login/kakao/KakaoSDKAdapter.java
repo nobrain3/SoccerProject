@@ -9,17 +9,21 @@ import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 
+import kr.co.kjworld.soccerproject.MainActivity;
+import kr.co.kjworld.soccerproject.common.SoccerApplication;
+
 public class KakaoSDKAdapter extends KakaoAdapter {
     @Override
     public IApplicationConfig getApplicationConfig() {
         IApplicationConfig newIAppLicationConfig = new IApplicationConfig() {
             @Override
             public Context getApplicationContext() {
-                return getApplicationContext();
+                return SoccerApplication.getSoccerApplicationContext();
             }
         };
         return newIAppLicationConfig;
     }
+
 
     @Override
     public ISessionConfig getSessionConfig() {
