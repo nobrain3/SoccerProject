@@ -9,7 +9,6 @@ import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.ISessionConfig;
 import com.kakao.auth.KakaoAdapter;
 
-import kr.co.kjworld.soccerproject.MainActivity;
 import kr.co.kjworld.soccerproject.common.SoccerApplication;
 
 public class KakaoSDKAdapter extends KakaoAdapter {
