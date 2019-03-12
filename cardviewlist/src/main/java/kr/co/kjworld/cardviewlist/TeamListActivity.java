@@ -3,7 +3,7 @@ package kr.co.kjworld.cardviewlist;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TeamListActitivigty extends AppCompatActivity {
+public class TeamListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

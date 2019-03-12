@@ -8,7 +8,7 @@
     tools:context=".myteam.MyTeamActivity">
     <fragment
         android:id="@+id/fragment_myteam_list"
-        android:name="kr.co.kjworld.soccerproject.myteam.myTeamListFragment"
+        android:name="kr.co.kjworld.soccerproject.myteam.MyTeamListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_myteam_list"/>
